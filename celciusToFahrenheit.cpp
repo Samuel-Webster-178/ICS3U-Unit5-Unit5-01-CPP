@@ -21,10 +21,10 @@ void convert() {
 
     // process & output
     try {
-        fltCelcius = std::stoi(strCelcius);
+        fltCelcius = std::stof(strCelcius);
         fahrenheit = 32 + (fltCelcius * 9 / 5);
         std::cout << fltCelcius << "°C is equal to ";
-        std::cout << fahrenheit << "°F." << std::endl;
+        std::cout << fahrenheit << "°F" << std::endl;
     } catch(std::invalid_argument) {
         std::cout << "Please enter a valid temperature" << std::endl;
     }
